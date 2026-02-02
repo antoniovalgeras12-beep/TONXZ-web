@@ -509,14 +509,11 @@ TONXZ - Starter web (Next.js + Tailwind)
 - Supabase
 - EOF
 
-# Empaqueta sin node_modules ni .next
-echo "Comprimiendo en ${ZIPNAME}..."
-cd "${PROJECT}/.."
-zip -r "${ZIPNAME}" "${PROJECT}" -x "${PROJECT}/node_modules/*" "${PROJECT}/.next/*"
+${PROJECT}/.."
+zip -r ${ZIPNAME} ${PROJECT} -x ${PROJECT}/node_modules/* ${PROJECT}/.next
 
-echo "Listo. Se creó ${PROJECT} y ${ZIPNAME}."
-echo "Para ejecutar localmente: cd ${PROJECT} && npm install && npm run dev"
+cd ${PROJECT} && npm install && npm run dev
 
 # End of script
 chmod +x create_tonxz.sh
-/create_tonxz.sh
+./create_tonxz.sh
