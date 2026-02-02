@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-PROJECT="tonxz-web"
-ZIPNAME="${PROJECT}.zip"
 
-echo "Creando proyecto ${PROJECT}..."
 
 # Remove if exists
 rm -rf "${PROJECT}" "${ZIPNAME}"
@@ -508,18 +505,9 @@ TONXZ - Starter web (Next.js + Tailwind)
 - Framework: Next.js en TypeScript
 - CSS: Tailwind CSS
 
-Cómo ejecutar:
-1. npm install
-2. npm run dev
-3. Abrir http://localhost:3000
-
-Deploy: recomiendo Vercel (conectar tu repo TONXZ-web). Next.js funciona muy bien en Vercel; si quieres exportar como sitio 100% estático usa `next export` con ajustes adicionales.
-
-Siguientes pasos recomendados:
-- Integrar CMS (Sanity / Contentful / Supabase) para contenido dinámico.
-- Añadir autenticación y base de datos (Supabase) si quieres usuarios, progreso y gamificación.
-- Implementar almacenamiento de media para la Mediateca.
-EOF
+- Contentful
+- Supabase
+- EOF
 
 # Empaqueta sin node_modules ni .next
 echo "Comprimiendo en ${ZIPNAME}..."
