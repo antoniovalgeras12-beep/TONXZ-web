@@ -531,14 +531,3 @@ echo "Para ejecutar localmente: cd ${PROJECT} && npm install && npm run dev"
 
 # End of script
 
-Guía rápida posterior al ZIP
-- Requisitos: Node.js 18+ recomendado (Next 13), npm 9+.
-- Para desarrollo local:
-  - cd tonxz-web
-  - npm install
-  - npm run dev
-- Para desplegar en Vercel: crea cuenta en vercel.com, conecta tu repo (o sube el ZIP a un nuevo repo), Vercel detecta Next.js automáticamente.
-
-¿Quieres que:
-- Suba esto a un repo TONXZ-web en tu cuenta github.com/antoniovalgeras12-beep ahora? (Puedo hacerlo si autorizas).
-- O te envío instrucciones para conectar Sanity/Supabase y añadir la funcionalidad "Frase del Día" y autenticación?
