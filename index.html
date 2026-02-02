@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Educativo</title>
+  <style>
+    :root {
+      --primary: #4f9da6;
+      --secondary: #e8f6f7;
+      --accent: #2c3e50;
+      --light: #ffffff;
+    }* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--secondary);
+  color: var(--accent);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--primary);
+  color: var(--light);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav {
+  background: var(--light);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+/* Login */
+.login-box {
+  max-width: 400px;
+  margin: auto;
+  background: var(--light);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.login-box input {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.7rem 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 0.7rem;
+  background: var(--primary);
+  color: var(--light);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Educativo */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--light);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Frases */
+.quote {
+  background: var(--light);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid var(--primary);
+  border-radius: 8px;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--primary);
+  color: var(--light);
+  margin-top: 3rem;
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Proyecto Educativo</h1>
+  <p>Aprender, inspirar y crecer</p>
+</header><nav>
+  <a href="#login">Iniciar sesión</a>
+  <a href="#educacion">Educación</a>
+  <a href="#galeria">Galería</a>
+  <a href="#frases">Frases</a>
+</nav><section id="login">
+  <h2>Iniciar sesión</h2>
+  <div class="login-box">
+    <input type="text" placeholder="Usuario" />
+    <input type="password" placeholder="Contraseña" />
+    <button>Entrar</button>
+  </div>
+</section><section id="educacion">
+  <h2>Secciones educativas</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Aprendizaje</h3>
+      <p>Contenido educativo claro y confiable para estudiantes.</p>
+    </div>
+    <div class="card">
+      <h3>Motivación</h3>
+      <p>Impulsa el desarrollo personal y académico.</p>
+    </div>
+    <div class="card">
+      <h3>Conocimiento</h3>
+      <p>Acceso a información útil y actualizada.</p>
+    </div>
+  </div>
+</section><section id="galeria">
+  <h2>Galería de imágenes</h2>
+  <div class="gallery">
+    <img src="https://picsum.photos/400/300?1" />
+    <img src="https://picsum.photos/400/300?2" />
+    <img src="https://picsum.photos/400/300?3" />
+  </div>
+</section><section id="frases">
+  <h2>Frases inspiradoras</h2>
+  <div class="quote">"La educación es el arma más poderosa para cambiar el mundo."</div>
+  <div class="quote">"Aprender hoy es liderar mañana."</div>
+  <div class="quote">"El conocimiento abre puertas que nadie puede cerrar."</div>
+</section><footer>
+  <p>© 2026 Proyecto Educativo | Diseño moderno y formal</p>
+</footer></body>
+</html>
