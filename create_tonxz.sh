@@ -530,4 +530,6 @@ echo "Listo. Se creó ${PROJECT} y ${ZIPNAME}."
 echo "Para ejecutar localmente: cd ${PROJECT} && npm install && npm run dev"
 
 # End of script
+chmod +x 
+create_tonxz.sh
 
